@@ -1,0 +1,18 @@
+Summary,Issue Type,Description,Priority,Epic Link
+EPIC-1: Patient Management,Epic,Group of features for patient registration and records,Highest,
+EPIC-2: Doctor & Staff Management,Epic,Group of features for doctor CRUD and schedules,Highest,
+EPIC-3: Appointment & Scheduling,Epic,Group of features for appointment booking and reminders,Highest,
+EPIC-4: Billing & Payments,Epic,Group of features for billing and receipts,Highest,
+EPIC-5: Reports & Records,Epic,Group of features for reports and logs,High,
+HMS-101: Patient registration page and API,Story,"As a receptionist, I want to register a new patient so that the patient will have a record. Acceptance: POST /patients with required fields, returns 201 and patient_id",High,EPIC-1: Patient Management
+HMS-102: Search patient by ID or name,Story,"As staff, I want to search patient records to quickly find patients. Acceptance: GET /patients?name= or GET /patients/{id} returns proper results",High,EPIC-1: Patient Management
+HMS-103: Maintain patient medical history,Story,"Store diagnoses and treatment entries linked to patient",Medium,EPIC-1: Patient Management
+HMS-201: Add/edit doctor details,Story,"As admin, add or edit doctor profile. Acceptance: POST /doctors",High,EPIC-2: Doctor & Staff Management
+HMS-202: Doctor availability module,Story,"Maintain doctor slots and availability",Medium,EPIC-2: Doctor & Staff Management
+HMS-301: Create appointment,Story,"As receptionist I want to create appointments. Acceptance: POST /appointments",High,EPIC-3: Appointment & Scheduling
+HMS-302: Cancel/reschedule appointment,Story,"Allow cancellation and rescheduling",Medium,EPIC-3: Appointment & Scheduling
+HMS-401: Generate bill,Story,"Create a bill for patient visit. Acceptance: POST /bills",High,EPIC-4: Billing & Payments
+HMS-402: Update payment status,Story,"Mark bills paid and generate receipts",Medium,EPIC-4: Billing & Payments
+HMS-501: Daily appointment report,Story,"Generate daily appointment report",Medium,EPIC-5: Reports & Records
+HMS-502: Patient discharge report,Story,"Generate discharge summary and final bill",Medium,EPIC-5: Reports & Records
+HMS-701: Billing miscalculation for inpatient,Bug,"Bug template: Steps to reproduce, expected vs actual",High,HMS-401: Generate bill
